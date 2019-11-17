@@ -22,4 +22,3 @@ main()
       printf("%d %d\n",max,min);
 
 } 
-

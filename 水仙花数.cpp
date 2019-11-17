@@ -2,7 +2,7 @@
 int main(void) 
 { int a,b,c;
   int i;
-  for(i=0;i<1000;i++)
+  for(i=100;i<1000;i++)
   {
   	a=i%10;
   	b=(i/10)%10;
