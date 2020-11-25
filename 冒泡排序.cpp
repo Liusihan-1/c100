@@ -1,25 +1,24 @@
 #include <stdio.h>
 #define Max 100
 main()
-{  
-	int a[5],i,j,t,max,min;
-    for(i=0;i<5;i++)
-    	scanf("%d",&a[i]);
-    for(i=0;i<5;i++)
+{  int a[Max],i,n=0,j,t;
+   scanf("%d",&n);
+    for(i=0;i<n;i++)
+      scanf("%d",&a[i]);
+    for(i=0;i<n-1;i++)
     { 
-		for(j=0;j<5;j++)
+		for(j=0;j<n-1;j++)
         {
 	      	if(a[j]<a[j+1])
-	        { 
-			t=a[j];
+	        { t=a[j];
 	        a[j]=a[j+1];
 	        a[j+1]=t;
-		 	}
-	    }
+		 }
+	  }
 	}
-      max=a[0];
-      min=a[4];
-      printf("%d %d\n",max,min);
-
+    printf("Sorted date is:\n");
+    for(i=0;i<n;i++)
+      printf("%d ",a[i]);
+    printf("\n");
 } 
 
